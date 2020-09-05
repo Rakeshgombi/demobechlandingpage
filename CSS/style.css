@@ -1,0 +1,91 @@
+/* CSS Reset */
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 17px;
+    color: #926239;
+    line-height: 1.6;
+}
+/* Home Section */
+#home{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+#home::before{
+  content: "";
+  background: url("../Images/beachshowcase.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+#home p{
+  color: #926239;
+  font-size: 1.1rem;
+  text-align: center;
+}
+/* Main Page */
+.section-1{
+  display: block;
+  background-color: #926239;
+  color: #fff;
+  text-align: center ;
+  padding: 20px;
+  width: 100%;
+}
+.section-2{
+  display: block;
+  background-color:  #f4f4f4;
+  color: #926239;
+  text-align: center ;
+  padding: 20px;
+}
+/* Footer section */
+footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #926239;
+  color: #fff;
+  text-align: center;
+}
+.box{
+  width: 33.33333%;
+  padding: 10px;
+}
+.box:nth-child(2){
+  background-color: #fff;
+  color: #926239;
+}
+
+/* Utility Class */
+.h-primary{
+  font-size: 3rem;
+  color: #926239;
+  text-align: center;
+}
+.btn{
+  /* opacity: 0; */
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  margin: 15px 5px;
+  color: #926239;
+  border-radius: 15px;
+  border: #926239 2px solid;
+}
+.btn:hover{
+background-color: #926239;
+color: #fff;
+}
